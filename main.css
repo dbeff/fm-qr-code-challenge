@@ -21,27 +21,37 @@
   font-family: var(--font-family);
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--color-light-gray);
+  margin: 0;
+  padding: 0;
 }
 
 main {
   display: flex;
   flex: 1;
-  height: 90vh;
+  height: 95vh;
   align-items: center;
   justify-content: center;
 }
 
 footer {
   height: 5vh;
+  text-align: center;
 }
 
 .card {
-  max-width: 300px;
+  max-width: 320px;
   background-color: white;
   padding: var(--grid-gutter);
-  border-radius: 1.15rem;
+  border-radius: calc(var(--grid-gutter) + 0.7rem);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .qrcode {
@@ -51,7 +61,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 
 .content {
