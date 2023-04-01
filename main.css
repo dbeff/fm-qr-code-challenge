@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-gray-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+
+  --font-size: 15px;
+  --font-family: "Outfit", sans-serif;
+
+  --grid-gutter: 1.15rem;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-light-gray);
+}
+
+main {
+  display: flex;
+  flex: 1;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 5vh;
+}
+
+.card {
+  max-width: 300px;
+  background-color: white;
+  padding: var(--grid-gutter);
+  border-radius: 1.15rem;
+}
+
+.qrcode {
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: url(./images/image-qr-code.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+.content {
+  padding: 0 var(--grid-gutter);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-dark-blue);
+  text-align: center;
+}
+
+.paragraph {
+  color: var(--color-gray-blue);
+  text-align: center;
+}
